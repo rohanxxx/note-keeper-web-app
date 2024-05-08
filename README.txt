@@ -22,4 +22,4 @@ List of things learned:
 - connected backend for the first time to the front end
 - first time ever using mongodb
 
-youtube link: 
+youtube link: https://youtu.be/m-EsOmXbMY8
