@@ -15,7 +15,7 @@ function App() {
 
   // Function to fetch notes from the backend
   const fetchNotes = () => {
-    axios.get("https://final-project-backend-rql5.onrender.com/notes")
+    axios.get("https://note-keeper-web-app.onrender.com/notes")
       .then(response => {
         setNotes(response.data);
       })
@@ -26,7 +26,7 @@ function App() {
 
     // Function to add a new note
     const addNote = (newNote) => {
-      axios.post("https://final-project-backend-rql5.onrender.com/notes", newNote)
+      axios.post("https://note-keeper-web-app.onrender.com/notes", newNote)
         .then(response => {
           fetchNotes(); // Fetch updated notes after adding
         })
@@ -36,7 +36,7 @@ function App() {
     };
   // Function to delete a note
   const deleteNote = (id) => {
-    axios.delete(`https://final-project-backend-rql5.onrender.com/notes/${id}`)
+    axios.delete(`https://note-keeper-web-app.onrender.com/notes/${id}`)
       .then(response => {
         fetchNotes(); // Fetch updated notes after deletion
       })
